@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CourseWorkC_
 {
@@ -67,9 +64,38 @@ namespace CourseWorkC_
             Minutes = t.minutes;
             Seconds = t.seconds;
         }
+        public static Time operator +(Time time1, Time time2)
+        {
+            int totalSeconds = time1.hours * 3600 + time1.minutes * 60 + time1.seconds;
+            int otherTotalSeconds = time2.hours * 3600 + time2.minutes * 60 + time2.seconds;
+
+            int sum = totalSeconds + otherTotalSeconds;
+
+            int h = sum / 3600 % 24;
+            int m = sum / 60 % 60;
+            int s = sum % 60;
+
+            return new Time(h, m, s);
+        }
+
+        public static Time operator -(Time time1, Time time2)
+        {
+            int totalSeconds = time1.hours * 3600 + time1.minutes * 60 + time1.seconds;
+            int otherTotalSeconds = time2.hours * 3600 + time2.minutes * 60 + time2.seconds;
+
+            int diff = totalSeconds - otherTotalSeconds;
+            if (diff < 0)
+                diff += 24 * 3600;
+
+            int h = diff / 3600 % 24;
+            int m = diff / 60 % 60;
+            int s = diff % 60;
+
+            return new Time(h, m, s);
+        }
         public override string ToString()
         {
-            return $"Time of departure of the train to the station {hours.ToString("D2")}:{minutes.ToString("D2")}:{seconds.ToString("D2")}";
+            return $" {hours.ToString("D2")}:{minutes.ToString("D2")}:{seconds.ToString("D2")}";
         }
 
     }

@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace CourseWorkC_
 {
@@ -72,19 +66,6 @@ namespace CourseWorkC_
         {
             Form2 form2 = new Form2(sch);
             form2.ShowDialog();
-        }
-
-        private void listView1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                if (listView1.SelectedItems.Count > 9)
-                {
-                    listView1.Items[selectionIndex].Remove();
-                    sch.GetTrains().RemoveAt(selectionIndex);
-                    e.Handled = true;
-                }
-            }
         }
 
         private void buttonAddTrain_Click(object sender, EventArgs e)

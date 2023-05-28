@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CourseWorkC_
 {
@@ -53,7 +50,7 @@ namespace CourseWorkC_
                 if (value > 0)
                     platform = value;
                 else
-                    throw new MyException("Invalid seconds value");
+                    throw new MyException("Invalid platform value");
             }
             }
         public override string ToString()

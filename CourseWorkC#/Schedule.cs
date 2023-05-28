@@ -7,40 +7,27 @@ using System.Threading.Tasks;
 
 namespace CourseWorkC_
 {
-    public class Schedule : IEnumerable, IEnumerator
+    public class Schedule : IEnumerable
     {
         private List<Train_Info> Trains;
-        private int index = -1;
+        private int Count = 0;
 
         public Schedule()
         {
             Trains = new List<Train_Info>();
         }
         ~Schedule() { }
-        public void Reset()
-        {
-            index = -1;
-        }
 
+        public Schedule(int count)
+        {
+            Trains = new List<Train_Info>();
+            Count = count;
+        }
         public IEnumerator GetEnumerator()
         {
-            foreach (Train_Info trn in Trains)
-            {
-                yield return trn;
-            }
+            return new MyIterator(Trains);
         }
-        public object Current
-        { get { return Trains.ElementAt(index); } }
-        public bool MoveNext()
-        {
-            if (index == Trains.Count() - 1)
-            {
-                Reset();
-                return false;
-            }
-            index++;
-            return true;
-        }
+
         public List<Train_Info> GetTrains()
         {
             return Trains;
