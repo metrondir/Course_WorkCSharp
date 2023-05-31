@@ -3,10 +3,10 @@ C:\Users\38096\Source\Repos\CourseWorkC#\CourseWorkC#\bin\Debug\CourseWorkC#.exe
 C:\Users\38096\Source\Repos\CourseWorkC#\CourseWorkC#\bin\Debug\CourseWorkC#.pdb
 C:\Users\38096\Source\Repos\CourseWorkC#\CourseWorkC#\obj\Debug\CourseWorkC#.csproj.AssemblyReference.cache
 C:\Users\38096\Source\Repos\CourseWorkC#\CourseWorkC#\obj\Debug\CourseWorkC#.csproj.SuggestedBindingRedirects.cache
-C:\Users\38096\Source\Repos\CourseWorkC#\CourseWorkC#\obj\Debug\CourseWorkC_.Form1.resources
-C:\Users\38096\Source\Repos\CourseWorkC#\CourseWorkC#\obj\Debug\CourseWorkC_.Form2.resources
 C:\Users\38096\Source\Repos\CourseWorkC#\CourseWorkC#\obj\Debug\CourseWorkC_.Properties.Resources.resources
 C:\Users\38096\Source\Repos\CourseWorkC#\CourseWorkC#\obj\Debug\CourseWorkC#.csproj.GenerateResource.cache
 C:\Users\38096\Source\Repos\CourseWorkC#\CourseWorkC#\obj\Debug\CourseWorkC#.csproj.CoreCompileInputs.cache
 C:\Users\38096\Source\Repos\CourseWorkC#\CourseWorkC#\obj\Debug\CourseWorkC#.exe
 C:\Users\38096\Source\Repos\CourseWorkC#\CourseWorkC#\obj\Debug\CourseWorkC#.pdb
+C:\Users\38096\Source\Repos\CourseWorkC#\CourseWorkC#\obj\Debug\CourseWorkC_.Menu.resources
+C:\Users\38096\Source\Repos\CourseWorkC#\CourseWorkC#\obj\Debug\CourseWorkC_.FinderForm.resources

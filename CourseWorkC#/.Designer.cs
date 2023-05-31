@@ -1,6 +1,6 @@
 ﻿namespace CourseWorkC_
 {
-    partial class Form2
+    partial class FinderForm
     {
         /// <summary>
         /// Required designer variable.
@@ -57,9 +57,9 @@
             this.buttonOK.TabIndex = 4;
             this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
-            this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
+            this.buttonOK.Click += new System.EventHandler(this.ButtonOK_Click);
             // 
-            // Form2
+            // FinderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -67,8 +67,8 @@
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.Destination);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "FinderForm";
+            this.Text = "FindTheNearestTrain";
             this.ResumeLayout(false);
             this.PerformLayout();
 

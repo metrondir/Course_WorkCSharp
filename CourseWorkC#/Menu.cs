@@ -5,56 +5,56 @@ using System.Windows.Forms;
 
 namespace CourseWorkC_
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
         Schedule sch;
         int selectionIndex;
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Menu_Load(object sender, EventArgs e)
         {
-            listView1.FullRowSelect = true;
-            listView1.GridLines = true;
+            ListView1.FullRowSelect = true;
+            ListView1.GridLines = true;
             sch = new Schedule();
         }
 
-        private void buttonListClear_Click(object sender, EventArgs e)
+        private void ButtonListClear_Click(object sender, EventArgs e)
         {
-            listView1.Items.Clear();
+            ListView1.Items.Clear();
             sch.GetTrains().Clear();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listView1.SelectedIndices.Count > 0)
-                selectionIndex = listView1.SelectedIndices[0];
+            if (ListView1.SelectedIndices.Count > 0)
+                selectionIndex = ListView1.SelectedIndices[0];
         }
 
-        private void buttonTimeInfo_Click(object sender, EventArgs e)
+        private void ButtonTimeInfo_Click(object sender, EventArgs e)
         {
             Time[] refArray = new Time[1];
-            if (listView1.SelectedIndices.Count > 0)
+            if (ListView1.SelectedIndices.Count > 0)
             {
-                selectionIndex = listView1.SelectedIndices[0];
+                selectionIndex = ListView1.SelectedIndices[0];
                 refArray[0] = new Time(sch.GetTrains().ElementAt(selectionIndex));
-                MessageBox.Show(refArray[0].ToString() + "\n", "Info About Time");
+                MessageBox.Show(refArray[0].GetTime() + "\n", "Info About Time");
             }
             else
             {
                 MessageBox.Show("No item selected.", "Info About Time");
             }
         }
-        private void buttonDepartureTime_Click(object sender, EventArgs e)
+        private void ButtonDepartureTime_Click(object sender, EventArgs e)
         {
             Time[] refArray = new Time[1];
-            if (listView1.SelectedIndices.Count > 0)
+            if (ListView1.SelectedIndices.Count > 0)
             {
-                selectionIndex = listView1.SelectedIndices[0];
+                selectionIndex = ListView1.SelectedIndices[0];
                 refArray[0] = new Train_Info(sch.GetTrains().ElementAt(selectionIndex));
-                MessageBox.Show(refArray[0].ToString() + "\n", "INFO ABOUT TRAIN");
+                MessageBox.Show(refArray[0].GetTime() + "\n", "INFO ABOUT TRAIN");
             }
             else
             {
@@ -62,13 +62,13 @@ namespace CourseWorkC_
             }
         }
 
-        private void buttonNearestTrain_Click(object sender, EventArgs e)
+        private void ButtonNearestTrain_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2(sch);
+            FinderForm form2 = new FinderForm(sch);
             form2.ShowDialog();
         }
 
-        private void buttonAddTrain_Click(object sender, EventArgs e)
+        private void ButtonAddTrain_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(Destination.Text))
             {
@@ -107,14 +107,14 @@ namespace CourseWorkC_
                         throw new MyException("Time field must contain numeric values.");
                     }
                     sch.AddTrain(Destination.Text, int.Parse(Hours.Text), int.Parse(Minutes.Text), int.Parse(Seconds.Text), int.Parse(Platform.Text));
-                    listView1.Items.Clear();
+                    ListView1.Items.Clear();
                     string[] str = new string[3];
                     foreach (Train_Info train in sch.GetTrains())
                     {
                         str[0] = train.Destination;
                         str[1] = train.Hours.ToString("D2") + ":" + train.Minutes.ToString("D2") + ":" + train.Seconds.ToString("D2");
                         str[2] = train.Platform.ToString();
-                        listView1.Items.Add(new ListViewItem(str));
+                        ListView1.Items.Add(new ListViewItem(str));
                     }
                     Destination.Clear();
                     Hours.Clear();

@@ -3,21 +3,21 @@ using System.Windows.Forms;
 
 namespace CourseWorkC_
 {
-    public partial class Form2 : Form
+    public partial class FinderForm : Form
     {
         Schedule sch;
-        public Form2()
+        public FinderForm()
         {
             InitializeComponent();
         }
 
-        public Form2(Schedule schedule)
+        public FinderForm(Schedule schedule)
         {
             sch = schedule;
             InitializeComponent();
         }
 
-        private void buttonOK_Click(object sender, EventArgs e)
+        private void ButtonOK_Click(object sender, EventArgs e)
         {
             string destination = Destination.Text;
             if (!string.IsNullOrEmpty(destination))
@@ -34,7 +34,7 @@ namespace CourseWorkC_
 
                 if (destinationExists)
                 {
-                    string nearestTrain = sch.Find(destination, 23, 59, 59);
+                    string nearestTrain = sch.FindNearestTrain(destination, 23, 59, 59);
                     string str = "Nearest train to " + destination + " on " + nearestTrain;
                     Close();
                     MessageBox.Show(str, "Nearest train");

@@ -28,12 +28,7 @@ namespace CourseWorkC_
         public Train_Info(string dest, int h, int m, int s, int plat) : base(h, m, s)
         {
            destination = dest;
-           Platform = plat;
-        }
-        public Train_Info(string destination, Train_Info t) : base(t)
-        {
-            this.destination = destination;
-            Platform = t.platform;
+           platform = plat;
         }
 
         public string Destination
@@ -53,9 +48,9 @@ namespace CourseWorkC_
                     throw new MyException("Invalid platform value");
             }
             }
-        public override string ToString()
+        public override string GetTime()
         {
-            return $"Train to {destination} departs at {base.ToString()} from platform {platform}";
+            return $"Train to {destination} departs at {base.GetTime()} from platform {platform}";
         }
     }
 }

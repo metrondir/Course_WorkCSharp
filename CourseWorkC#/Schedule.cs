@@ -9,38 +9,38 @@ namespace CourseWorkC_
 {
     public class Schedule : IEnumerable
     {
-        private List<Train_Info> Trains;
-        private int Count = 0;
+        private List<Train_Info> trains;
+        private int count = 0;
 
         public Schedule()
         {
-            Trains = new List<Train_Info>();
+            trains = new List<Train_Info>();
         }
         ~Schedule() { }
 
-        public Schedule(int count)
+        public Schedule(int ncount)
         {
-            Trains = new List<Train_Info>();
-            Count = count;
+            trains = new List<Train_Info>();
+            count = ncount;
         }
         public IEnumerator GetEnumerator()
         {
-            return new MyIterator(Trains);
+            return new MyIterator(trains);
         }
 
         public List<Train_Info> GetTrains()
         {
-            return Trains;
+            return trains;
         }
         public void AddTrain(string destination, int hour, int minutes, int seconds, int platform)
         {
-            Trains.Add(new Train_Info(destination, hour, minutes, seconds, platform));
+            trains.Add(new Train_Info(destination, hour, minutes, seconds, platform));
         }
-        public string Find(string destination, int hours, int minutes, int seconds)
+        public string FindNearestTrain(string destination, int hours, int minutes, int seconds)
         {
-            string totalTime = "00:00:00";
+            string totalTime = " ";
 
-            foreach (Train_Info train in Trains)
+            foreach (Train_Info train in trains)
             {
                 if (train.Destination == destination)
                 {

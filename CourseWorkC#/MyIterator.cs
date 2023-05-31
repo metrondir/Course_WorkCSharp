@@ -9,15 +9,15 @@ namespace CourseWorkC_
 {
      class MyIterator : IEnumerator
     {
-        private List<Train_Info> Trains;
+        private List<Train_Info> trains;
         private int index = -1;
         public MyIterator(List<Train_Info> tr)
         {
-           Trains = tr;
+           trains = tr;
         }
         public bool MoveNext()
         {
-            if (index == Trains.Count - 1)
+            if (index == trains.Count - 1)
             {
                 Reset();
                 return false;
@@ -33,7 +33,7 @@ namespace CourseWorkC_
 
         public object Current
         {
-            get { return Trains[index]; }
+            get { return trains[index]; }
         }
     }
   

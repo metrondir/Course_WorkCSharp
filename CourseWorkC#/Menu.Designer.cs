@@ -1,6 +1,6 @@
 ﻿namespace CourseWorkC_
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
-            this.listView1 = new System.Windows.Forms.ListView();
+            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup10 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            this.ListView1 = new System.Windows.Forms.ListView();
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -58,48 +58,48 @@
             this.Platform = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // listView1
+            // ListView1
             // 
-            this.listView1.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.listView1.AllowColumnReorder = true;
-            this.listView1.AllowDrop = true;
-            this.listView1.BackgroundImageTiled = true;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ListView1.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.ListView1.AllowColumnReorder = true;
+            this.ListView1.AllowDrop = true;
+            this.ListView1.BackgroundImageTiled = true;
+            this.ListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            listViewGroup1.Header = "ListViewGroup";
-            listViewGroup1.Name = "listViewGroup1";
-            listViewGroup2.Header = "ListViewGroup";
-            listViewGroup2.Name = "listViewGroup2";
-            listViewGroup3.Header = "ListViewGroup";
-            listViewGroup3.Name = "listViewGroup3";
-            listViewGroup4.Header = "ListViewGroup";
-            listViewGroup4.Name = "listViewGroup4";
-            listViewGroup5.Header = "ListViewGroup";
-            listViewGroup5.Name = "listViewGroup5";
-            this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2,
-            listViewGroup3,
-            listViewGroup4,
-            listViewGroup5});
-            this.listView1.HideSelection = false;
-            this.listView1.HotTracking = true;
-            this.listView1.HoverSelection = true;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
-            this.listView1.LabelEdit = true;
-            this.listView1.Location = new System.Drawing.Point(293, 41);
-            this.listView1.Name = "listView1";
-            this.listView1.RightToLeftLayout = true;
-            this.listView1.ShowGroups = false;
-            this.listView1.Size = new System.Drawing.Size(406, 313);
-            this.listView1.TabIndex = 6;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.ListView1.FullRowSelect = true;
+            this.ListView1.GridLines = true;
+            listViewGroup6.Header = "ListViewGroup";
+            listViewGroup6.Name = "listViewGroup1";
+            listViewGroup7.Header = "ListViewGroup";
+            listViewGroup7.Name = "listViewGroup2";
+            listViewGroup8.Header = "ListViewGroup";
+            listViewGroup8.Name = "listViewGroup3";
+            listViewGroup9.Header = "ListViewGroup";
+            listViewGroup9.Name = "listViewGroup4";
+            listViewGroup10.Header = "ListViewGroup";
+            listViewGroup10.Name = "listViewGroup5";
+            this.ListView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            listViewGroup6,
+            listViewGroup7,
+            listViewGroup8,
+            listViewGroup9,
+            listViewGroup10});
+            this.ListView1.HideSelection = false;
+            this.ListView1.HotTracking = true;
+            this.ListView1.HoverSelection = true;
+            this.ListView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem2});
+            this.ListView1.LabelEdit = true;
+            this.ListView1.Location = new System.Drawing.Point(293, 41);
+            this.ListView1.Name = "ListView1";
+            this.ListView1.RightToLeftLayout = true;
+            this.ListView1.ShowGroups = false;
+            this.ListView1.Size = new System.Drawing.Size(406, 313);
+            this.ListView1.TabIndex = 6;
+            this.ListView1.UseCompatibleStateImageBehavior = false;
+            this.ListView1.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader2
             // 
@@ -128,11 +128,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 9);
+            this.label1.Location = new System.Drawing.Point(51, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 16);
+            this.label1.Size = new System.Drawing.Size(137, 16);
             this.label1.TabIndex = 8;
-            this.label1.Text = "INFORMATION ABOUT TRAIN";
+            this.label1.Text = "Information about train";
             // 
             // Destination
             // 
@@ -216,7 +216,7 @@
             this.buttonAddTrain.Text = "Add a train to the schedule";
             this.buttonAddTrain.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.buttonAddTrain.UseVisualStyleBackColor = true;
-            this.buttonAddTrain.Click += new System.EventHandler(this.buttonAddTrain_Click);
+            this.buttonAddTrain.Click += new System.EventHandler(this.ButtonAddTrain_Click);
             // 
             // buttonTimeInfo
             // 
@@ -226,7 +226,7 @@
             this.buttonTimeInfo.TabIndex = 27;
             this.buttonTimeInfo.Text = "Get the Time";
             this.buttonTimeInfo.UseVisualStyleBackColor = true;
-            this.buttonTimeInfo.Click += new System.EventHandler(this.buttonTimeInfo_Click);
+            this.buttonTimeInfo.Click += new System.EventHandler(this.ButtonTimeInfo_Click);
             // 
             // buttonDepartureTime
             // 
@@ -236,7 +236,7 @@
             this.buttonDepartureTime.TabIndex = 28;
             this.buttonDepartureTime.Text = "Get the train departure Time";
             this.buttonDepartureTime.UseVisualStyleBackColor = true;
-            this.buttonDepartureTime.Click += new System.EventHandler(this.buttonDepartureTime_Click);
+            this.buttonDepartureTime.Click += new System.EventHandler(this.ButtonDepartureTime_Click);
             // 
             // buttonNearestTrain
             // 
@@ -246,7 +246,7 @@
             this.buttonNearestTrain.TabIndex = 29;
             this.buttonNearestTrain.Text = "The nearest train departure Time";
             this.buttonNearestTrain.UseVisualStyleBackColor = true;
-            this.buttonNearestTrain.Click += new System.EventHandler(this.buttonNearestTrain_Click);
+            this.buttonNearestTrain.Click += new System.EventHandler(this.ButtonNearestTrain_Click);
             // 
             // buttonListClear
             // 
@@ -256,7 +256,7 @@
             this.buttonListClear.TabIndex = 30;
             this.buttonListClear.Text = "Clear the list";
             this.buttonListClear.UseVisualStyleBackColor = true;
-            this.buttonListClear.Click += new System.EventHandler(this.buttonListClear_Click);
+            this.buttonListClear.Click += new System.EventHandler(this.ButtonListClear_Click);
             // 
             // label7
             // 
@@ -274,7 +274,7 @@
             this.Platform.Size = new System.Drawing.Size(100, 22);
             this.Platform.TabIndex = 32;
             // 
-            // Form1
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -297,10 +297,10 @@
             this.Controls.Add(this.Destination);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listView1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Controls.Add(this.ListView1);
+            this.Name = "Menu";
+            this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,7 +308,7 @@
 
         #endregion
 
-        public System.Windows.Forms.ListView listView1;
+        public System.Windows.Forms.ListView ListView1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
